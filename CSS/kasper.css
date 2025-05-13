@@ -554,3 +554,165 @@ header nav .form i {
     font-size: 14px;
 }
 /* End Stats */
+/* Start Skills */
+.skills {
+    padding: var(--secPadding) 0;
+}
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+    .skills .container > div {
+        flex-basis: 45%;
+    }
+}
+.skills .container > div > h3 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.skills .container > div > p {
+    color: #777;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+.skills .testimonials .content {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.skills .testimonials .content img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+@media (max-width: 767px) {
+    .skills .testimonials .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills .testimonials .content img {
+        margin: 0 auto 20px;
+    }
+}
+.skills .testimonials .content .text {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+.skills .testimonials .content .text p {
+    color: #777;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.skills .testimonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+@media (max-width: 767px) {
+    .skills .testimonials .bullets {
+        margin: 0;
+    }
+    .skills .testimonials .bullets li {
+        display: none;
+    }
+}
+.skills .testimonials .bullets li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.skills .testimonials .bullets li.active {
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+.skills .our-skills .prog-holder {
+    margin-bottom: 40px;
+}
+.skills .our-skills .prog-holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.skills .our-skills .prog-holder .prog {
+    background-color: #dedadc;
+    height: 30px;
+}
+.skills .our-skills .prog-holder .prog span {
+    display: block;
+    background-color: var(--mainColor);
+    height: 100%;
+    position: relative;
+}
+.skills .our-skills .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    right: -20px;
+    top: -38px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 6px;
+}
+.skills .our-skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    right: -12px;
+    top: -12px;
+}
+/* End Skills */
+/* Start Quote */
+.quote {
+    position: relative;
+    padding: var(--secPadding) 0;
+    background-image: url('../Images/quote.jpg');
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.quote::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 75%);
+}
+.quote .container {
+    position: relative;
+}
+.quote .container  q {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+.quote .container  q::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10d';
+    font-weight: 700;
+    padding-right: 5px;
+    position: relative;
+    top: -8px;
+}
+.quote .container  q::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10e';
+    font-weight: 700;
+    padding-left: 5px;
+    position: relative;
+    top: 10px;
+}
+/* End Quote */
