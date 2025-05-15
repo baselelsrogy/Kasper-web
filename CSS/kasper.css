@@ -718,12 +718,12 @@ header nav .form i {
 /* End Quote */
 /* Start Pricing */
 .pricing {
-    padding: var(--secPadding);
+    padding: var(--secPadding) 0;
 }
 .pricing .plans {
-  display: grid;  
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 30px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
 }
 .pricing .plans .plan {
     background-color: #FCFCFC;
@@ -741,7 +741,7 @@ header nav .form i {
 }
 .pricing .plans .plan .head span {
     font-size: 60px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .pricing .plans .plan .head span::before {
     content: "$";
@@ -754,7 +754,6 @@ header nav .form i {
 .pricing .plans .plan .head span::after {
     content: "/Mo";
     position: relative;
-    font-weight: normal;
     font-size: 25px;
     right: -10px;
 }
@@ -798,3 +797,77 @@ header nav .form i {
     text-decoration: none;
 }
 /* End Pricing */
+/* Start Subscribe */
+.subscribe {
+    position: relative;
+    padding: var(--secPadding) 0;
+    background-image: url('../Images/subscribe.jpg');
+    background-size: cover;
+    color: white;
+}
+.subscribe::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+}
+.subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+.subscribe form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+.subscribe form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+}
+.subscribe form input[type="email"] {
+    border: 1px solid white;
+    border-right: none;
+    background: none;
+    padding: 20px 20px 20px 60px;
+    caret-color: var(--mainColor);
+    width: calc(100% - 130px);
+    color: var(--mainColor);
+}
+.subscribe form input[type="email"]:focus {
+    outline: none;
+}
+.subscribe form ::placeholder {
+    color: var(--mainColor);
+}
+.subscribe form input[type="submit"] {
+    width: 130px;
+    background-color: var(--mainColor);
+    color: white;
+    border: 1px solid white;
+    border-left: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.subscribe p {
+    line-height: 2;
+    margin-left: 50px;
+}
+@media (max-width: 991px) {
+    .subscribe p {
+        margin: 30px 0 0;
+        text-align: center;
+    }
+}
+/* End Subscribe */
