@@ -39,7 +39,7 @@ It demonstrates my understanding of responsive layout, clean and semantic HTML, 
 
 ## 🌐 Live Preview
 
-> **
+> *https://baselelsrogy.github.io/Kasper-web/*
 
 ## 🙏 Credits
 
